@@ -64,8 +64,10 @@ const options = {
   'option3': 'do the other thing'
 };
 
-function selectFromObject(defaultValue, compare) {
-  return options[compare] || defaultValue;
+function selectFromObject(compare) {
+  return (compare !== null && compare !== undefined) ?
+    options[compare] :
+    null;
 }
 
 const iWantSomething = selectFromObject(null, 'option1');
