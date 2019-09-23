@@ -14,9 +14,17 @@ for(let i = 0; i < arr.length; i += 1) {
 
 console.log(arr);
 
+// there have historically been some subtle problems with forEach,
+// which makes it non-preferred
+
+arr.forEach((i) => {
+  console.log(i);
+})
+
 // Other examples of how to do this, using in-place mutation
 
 let count = 0;
+let text = '';
 
 while (count < 10) {
   text += "The number is " + count;
