@@ -38,7 +38,8 @@ switch (switchDate) {
 
 
 // The One I Actually Use In Work
-// All of this is pseudocode, I've never had to use a switch statement outside of very detailed interface work
+// I've never had to use a switch statement outside of detailed interface work
+// When I want that reasoning, I write something like this.
 
 const options = {
   'option1': 'do this thing',
