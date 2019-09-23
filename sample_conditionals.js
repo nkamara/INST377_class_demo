@@ -36,6 +36,23 @@ switch (switchDate) {
     console.log('We are outside the normal stream of time');
 }
 
+const number1 = 24;
+
+// Ternery operators are very useful in limited cases
+const value = (number1 > 2) ? 'more than 2' : 'less than 2';
+
+const x = 'more than 2'
+const value = x || 'less than 2'; // this will return "more than 2"
+
+// Ternery operators can also lead to bad habits:
+const val2 = (number1 > 2) ?
+  (typeof x === 'string') ? 'string' : 'not a string' :
+  'less than 2';
+
+// the above is so common that ternery operators are not preferred in early code
+
+
+
 
 // The One I Actually Use In Work
 // I've never had to use a switch statement outside of detailed interface work
