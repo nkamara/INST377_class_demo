@@ -55,7 +55,7 @@
   </div>
   <div class="container">
     <div class="first">
-        <button onclick="alert('hello world')">Click Me</button>
+        <button onclick="alertMe(16)">What is 16C in F?</button>
     </div>
     <div class="second">
       <p>
@@ -63,6 +63,14 @@
       </p>
     </div>
   </div>
+  <script>
+    function toFahrenheit(celsius) {
+      return (celsius * 1.8) + 32;
+    }
+    function alertMe(display) {
+      alert(toFahrenheit(display));
+    }
+  </script>
 </body>
 
 </html>
