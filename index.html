@@ -30,8 +30,6 @@
       width: 350px;
       margin-bottom: 25px;
       display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .container p {
@@ -65,8 +63,9 @@
   </div>
   <script>
     function toFahrenheit(celsius) {
-      return (celsius * 1.8) + 32;
+      return (celsius * (9/5)) + 32;
     }
+
     function alertMe(display) {
       alert(toFahrenheit(display));
     }
