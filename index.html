@@ -32,15 +32,11 @@
       display: flex;
     }
 
-    .container p {
-
-    }
-
-    .container .first {
+    .first {
       background: teal;
     }
 
-    .container .second {
+    .second {
       background: lightblue;
     }
   </style>
@@ -52,10 +48,10 @@
     <a href="#">anchor tag to nowhere</a>
   </div>
   <div class="container">
-    <div class="first">
-        <button onclick="alertMe(16)">What is 16C in F?</button>
+    <div class="first textbox">
+      <button onclick="alertMe(16)">What is 16C in F?</button>
     </div>
-    <div class="second">
+    <div class="second textbox">
       <p>
         World #2
       </p>
@@ -63,7 +59,7 @@
   </div>
   <script>
     function toFahrenheit(celsius) {
-      return (celsius * (9/5)) + 32;
+      return (celsius * (9 / 5)) + 32;
     }
 
     function alertMe(display) {
