@@ -65,11 +65,13 @@ const options = {
 };
 
 function selectFromObject(compare) {
-  return (compare !== null && compare !== undefined) ?
+  return (options[compare] !== undefined) ?
     options[compare] :
     null;
 }
 
-const iWantSomething = selectFromObject(null, 'option1');
+const iWantSomething = selectFromObject('option1');
 
 console.log(iWantSomething);
+
+https://developer.mozilla.org/en-US/docs/Web/Events
