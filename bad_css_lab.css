@@ -1,0 +1,22 @@
+doc {
+  background: green;
+  height: 960px;
+  width: 480px;
+}
+
+.container {
+  body: purple;
+}
+
+  div {
+    color: red
+    width: 100px;
+    height: 42px;
+  }
+
+headline {
+  font-size: 42px;
+  font-style: bold;
+  font-weight: 400;
+}
+
