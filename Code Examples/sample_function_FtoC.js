@@ -3,6 +3,6 @@ function toFahrenheit(celcius) {
     return;
   }
   
-  return celcius * 1.8 + 32;
+  return (celcius * 9/5) + 32;
 }
 

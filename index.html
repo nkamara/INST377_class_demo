@@ -19,12 +19,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-items: center;
       margin-bottom: 25px;
     }
 
     .head a,
-    .head h1 {
+    .head {
       margin: 0;
       padding: 0;
     }
@@ -42,7 +41,6 @@
     }
 
     .textbox {
-
       height: 100px;
       width: 350px;
       margin-bottom: 25px;
@@ -51,8 +49,8 @@
       justify-content: center
     }
 
-    .first {
-      background: teal;
+    .green {
+      background: red;
       cursor: pointer;
     }
 
@@ -74,7 +72,9 @@
     </div>
     </div>
     <div class="container">
-      <div class="first textbox">
+      <div class="green textbox">
+      </div>
+      <div class="green textbox">
       </div>
       <div class="second textbox">
         <p>
@@ -93,7 +93,7 @@
     }
 
 
-    let element = document.getElementsByClassName("first")[0];
+    let element = document.getElementsByClassName("green")[0];
     const string = "click me I'm great";
     element.innerHTML = string;
 
