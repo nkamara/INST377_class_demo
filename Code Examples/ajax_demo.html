@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Test AJAX page</title>
   <style>
+    body {
+      line-height: 1.6;
+      font-size: 18px;
+      color: #444;
+      padding: 0 10px
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2
+    }
+
     .container {
       position: absolute;
       top: 0;
@@ -11,11 +25,12 @@
       left: 0;
       display: flex;
       justify-content: center;
-      align-items:flex-start;
+      align-items: flex-start;
       background: #eee;
 
       font-family: Helvetica, Geneva, Tahoma, sans-serif;
     }
+
     .wrapper {
       width: 60%;
       min-height: 100%;
@@ -26,6 +41,7 @@
       background: #fefefe;
       border: 1px dashed #ccc;
     }
+
     .wrapper div {
       border-radius: 14px;
     }
@@ -38,14 +54,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
       font-weight: bold;
       font-size: 3em;
-      text-transform:capitalize;
+      text-transform: capitalize;
     }
-  
+
+    .content {
+      min-height: 80%;
+      background: #fff;
+
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="wrapper">
@@ -55,4 +77,5 @@
     </div>
   </div>
 </body>
+
 </html>
