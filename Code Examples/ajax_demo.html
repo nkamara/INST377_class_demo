@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test AJAX page</title>
+  <style>
+    .container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items:flex-start;
+      background: #eee;
+
+      font-family: Helvetica, Geneva, Tahoma, sans-serif;
+    }
+    .wrapper {
+      width: 60%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      background: #fefefe;
+      border: 1px dashed #ccc;
+    }
+    .wrapper div {
+      border-radius: 14px;
+    }
+
+    .header {
+      margin: 20px 50px;
+      min-height: 75px;
+      background: lightblue;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      font-weight: bold;
+      font-size: 3em;
+      text-transform:capitalize;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">Test AJAX page</div>
+      <div class="content"></div>
+      <div class="footer">Load some test json</div>
+    </div>
+  </div>
+</body>
+</html>
