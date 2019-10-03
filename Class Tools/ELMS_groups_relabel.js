@@ -22,6 +22,8 @@ for (let i = 0; i < clickbatch.length; i += 1) {
   clickbatch[i].click();
 }
 
+// Section 2
+
 let subgroups = [];
 let groups = [];
 let match = [];
