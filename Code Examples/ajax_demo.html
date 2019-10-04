@@ -109,11 +109,19 @@
   <div class="container">
     <div class="wrapper">
       <div class="header">Test AJAX page</div>
-      <button class="button" onclick="">Load Some JSON</button>
+      <button class="button" onclick="loadData()">Load Some JSON</button>
       <div class="content"></div>
       <div class="footer"></div>
     </div>
   </div>
+  <script>
+  function loadData() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(res => res.map(user => user.username))
+    .then(userNames => console.log(userNames));
+  }
+</script>
 </body>
 
 </html>
