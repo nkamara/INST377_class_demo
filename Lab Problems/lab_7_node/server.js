@@ -47,7 +47,7 @@ app.get('/api', (req, res) => {
     .then((r) => r.json())
     .then((data) => {
       console.log(data);
-      res.send({ data });
+      res.send({ data: data });
     })
     .catch((err) => {
       console.log(err);
