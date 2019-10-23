@@ -19,8 +19,8 @@
     function loadData() {
       fetch('ajax_sample.json')
         .then(res => res.json())
-        .then(res => res.map(c => c.code))
-        .then(codes => document.querySelector(".content").innerText = codes);
+        .then(data => data.map(c => c.code))
+        .then(data => document.querySelector(".content").innerText = data);
     }
   </script>
 </body>
