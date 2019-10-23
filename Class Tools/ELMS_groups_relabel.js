@@ -2,7 +2,7 @@
 // we need to find out what section they're in so they have class together
 
 const all = document.getElementsByClassName("StudentEnrollment");
-
+all = Array
 let nameAndSection = [];
 for (let i = 0; i < all.length; i += 1) {
   nameAndSection[i] = {
